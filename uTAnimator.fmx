@@ -1,0 +1,451 @@
+object Form57: TForm57
+  Left = 0
+  Top = 0
+  Caption = 'TAnimator'
+  ClientHeight = 708
+  ClientWidth = 1268
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object Button1: TButton
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 185.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Position.X = 12.000000000000000000
+    Position.Y = 183.000000000000000000
+    Size.Width = 627.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Executar anima'#231#227'o'
+    OnClick = Button1Click
+    object ShadowEffect4: TShadowEffect
+      Distance = 3.000000000000000000
+      Direction = 45.000000000000000000
+      Softness = 0.300000011920929000
+      Opacity = 0.600000023841857900
+      ShadowColor = claBlack
+      Enabled = False
+    end
+  end
+  object Rectangle1: TRectangle
+    Fill.Color = claWhite
+    Position.X = 28.000000000000000000
+    Position.Y = 38.000000000000000000
+    Size.Width = 277.000000000000000000
+    Size.Height = 130.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claGray
+    XRadius = 12.000000000000000000
+    YRadius = 12.000000000000000000
+    object ShadowEffect1: TShadowEffect
+      Distance = 3.000000000000000000
+      Direction = 45.000000000000000000
+      Softness = 0.300000011920929000
+      Opacity = 0.600000023841857900
+      ShadowColor = claBlack
+      Enabled = False
+    end
+    object T0: TRadioButton
+      Align = Top
+      GroupName = 'AniType'
+      IsChecked = True
+      Margins.Left = 16.000000000000000000
+      Margins.Top = 16.000000000000000000
+      Margins.Right = 16.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 245.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'In'
+    end
+    object T1: TRadioButton
+      Align = Top
+      GroupName = 'AniType'
+      Margins.Left = 16.000000000000000000
+      Margins.Top = 16.000000000000000000
+      Margins.Right = 16.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 51.000000000000000000
+      Size.Width = 245.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Out'
+    end
+    object T2: TRadioButton
+      Align = Top
+      GroupName = 'AniType'
+      Margins.Left = 16.000000000000000000
+      Margins.Top = 16.000000000000000000
+      Margins.Right = 16.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 86.000000000000000000
+      Size.Width = 245.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'InOut'
+    end
+  end
+  object Rectangle2: TRectangle
+    Fill.Color = claWhite
+    Position.X = 350.000000000000000000
+    Position.Y = 38.000000000000000000
+    Size.Width = 277.000000000000000000
+    Size.Height = 130.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claGray
+    XRadius = 12.000000000000000000
+    YRadius = 12.000000000000000000
+    object ShadowEffect2: TShadowEffect
+      Distance = 3.000000000000000000
+      Direction = 45.000000000000000000
+      Softness = 0.300000011920929000
+      Opacity = 0.600000023841857900
+      ShadowColor = claBlack
+      Enabled = False
+    end
+    object I0: TRadioButton
+      Align = Top
+      GroupName = 'IntType'
+      IsChecked = True
+      Margins.Left = 16.000000000000000000
+      Margins.Top = 8.000000000000000000
+      Margins.Right = 16.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 245.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Linear'
+    end
+    object I2: TRadioButton
+      Align = Top
+      GroupName = 'IntType'
+      Margins.Left = 16.000000000000000000
+      Margins.Top = 1.000000000000000000
+      Margins.Right = 16.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 48.000000000000000000
+      Size.Width = 245.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Cubic'
+    end
+    object I4: TRadioButton
+      Align = Top
+      GroupName = 'IntType'
+      Margins.Left = 16.000000000000000000
+      Margins.Top = 1.000000000000000000
+      Margins.Right = 16.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 88.000000000000000000
+      Size.Width = 245.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Quintic'
+    end
+    object I3: TRadioButton
+      Align = Top
+      GroupName = 'IntType'
+      Margins.Left = 16.000000000000000000
+      Margins.Top = 1.000000000000000000
+      Margins.Right = 16.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 68.000000000000000000
+      Size.Width = 245.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Quartic'
+    end
+    object I1: TRadioButton
+      Align = Top
+      GroupName = 'IntType'
+      Margins.Left = 16.000000000000000000
+      Margins.Top = 1.000000000000000000
+      Margins.Right = 16.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 28.000000000000000000
+      Size.Width = 245.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Quadratic'
+    end
+    object I5: TRadioButton
+      Align = Top
+      GroupName = 'IntType'
+      Margins.Left = 16.000000000000000000
+      Margins.Top = 1.000000000000000000
+      Margins.Right = 16.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 108.000000000000000000
+      Size.Width = 245.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Sinusoidal'
+    end
+    object I6: TRadioButton
+      GroupName = 'IntType'
+      Margins.Left = 16.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 16.000000000000000000
+      Position.X = 138.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 100.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Exponential'
+    end
+    object I8: TRadioButton
+      GroupName = 'IntType'
+      Margins.Left = 16.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 16.000000000000000000
+      Position.X = 138.000000000000000000
+      Position.Y = 67.000000000000000000
+      Size.Width = 100.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Elastic'
+    end
+    object I10: TRadioButton
+      GroupName = 'IntType'
+      Margins.Left = 16.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 16.000000000000000000
+      Position.X = 138.000000000000000000
+      Position.Y = 109.000000000000000000
+      Size.Width = 100.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Bouce'
+    end
+    object I9: TRadioButton
+      GroupName = 'IntType'
+      Margins.Left = 16.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 16.000000000000000000
+      Position.X = 138.000000000000000000
+      Position.Y = 88.000000000000000000
+      Size.Width = 100.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Back'
+    end
+    object I7: TRadioButton
+      GroupName = 'IntType'
+      Margins.Left = 16.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 16.000000000000000000
+      Position.X = 138.000000000000000000
+      Position.Y = 27.000000000000000000
+      Size.Width = 100.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Circular'
+    end
+  end
+  object Grafico: TRectangle
+    Fill.Color = claWhite
+    Position.X = 24.000000000000000000
+    Position.Y = 273.000000000000000000
+    Size.Width = 601.000000000000000000
+    Size.Height = 414.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claGray
+    XRadius = 12.000000000000000000
+    YRadius = 12.000000000000000000
+    object ShadowEffect3: TShadowEffect
+      Distance = 3.000000000000000000
+      Direction = 45.000000000000000000
+      Softness = 0.300000011920929000
+      Opacity = 0.600000023841857900
+      ShadowColor = claBlack
+      Enabled = False
+    end
+  end
+  object Button2: TButton
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 185.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Position.X = 12.000000000000000000
+    Position.Y = 228.000000000000000000
+    Size.Width = 627.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Limpar'
+    OnClick = Button2Click
+    object ShadowEffect5: TShadowEffect
+      Distance = 3.000000000000000000
+      Direction = 45.000000000000000000
+      Softness = 0.300000011920929000
+      Opacity = 0.600000023841857900
+      ShadowColor = claBlack
+      Enabled = False
+    end
+  end
+  object Rectangle3: TRectangle
+    Fill.Color = claWhite
+    Position.X = 650.000000000000000000
+    Position.Y = 273.000000000000000000
+    Size.Width = 601.000000000000000000
+    Size.Height = 414.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claGray
+    XRadius = 12.000000000000000000
+    YRadius = 12.000000000000000000
+    object ShadowEffect6: TShadowEffect
+      Distance = 3.000000000000000000
+      Direction = 45.000000000000000000
+      Softness = 0.300000011920929000
+      Opacity = 0.600000023841857900
+      ShadowColor = claBlack
+      Enabled = False
+    end
+    object Circulo: TCircle
+      Fill.Color = claBlue
+      Position.X = 290.000000000000000000
+      Position.Y = 197.000000000000000000
+      Size.Width = 20.000000000000000000
+      Size.Height = 20.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claBlue
+    end
+    object Circulo2: TCircle
+      Fill.Color = claRed
+      Position.X = 292.000000000000000000
+      Size.Width = 20.000000000000000000
+      Size.Height = 20.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claRed
+    end
+    object Quadrado: TRectangle
+      Fill.Color = claWhite
+      Position.X = 407.000000000000000000
+      Position.Y = 42.000000000000000000
+      Size.Width = 150.000000000000000000
+      Size.Height = 150.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 2.000000000000000000
+    end
+    object Quadrado2: TRectangle
+      Fill.Color = claWhite
+      Position.X = 407.000000000000000000
+      Position.Y = 239.000000000000000000
+      Size.Width = 150.000000000000000000
+      Size.Height = 150.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 2.000000000000000000
+    end
+    object Quadrado4: TRectangle
+      Fill.Color = claWhite
+      Position.X = 39.000000000000000000
+      Position.Y = 41.000000000000000000
+      Size.Width = 150.000000000000000000
+      Size.Height = 150.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 2.000000000000000000
+    end
+    object Layout1: TLayout
+      Position.X = 26.000000000000000000
+      Position.Y = 231.000000000000000000
+      Size.Width = 177.000000000000000000
+      Size.Height = 167.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Quadrado3: TRectangle
+        Align = Center
+        Fill.Color = claWhite
+        Size.Width = 150.000000000000000000
+        Size.Height = 150.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Thickness = 2.000000000000000000
+      end
+    end
+  end
+  object Inv: TCheckBox
+    IsChecked = True
+    Position.X = 886.000000000000000000
+    Position.Y = 232.000000000000000000
+    Text = 'Inverter AnimationType'
+  end
+  object Text1: TText
+    Position.X = 1060.000000000000000000
+    Position.Y = 286.000000000000000000
+    Size.Width = 147.000000000000000000
+    Size.Height = 23.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Radius'
+  end
+  object Text2: TText
+    Position.X = 1058.000000000000000000
+    Position.Y = 486.000000000000000000
+    Size.Width = 147.000000000000000000
+    Size.Height = 23.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'RotationAngle'
+  end
+  object Text3: TText
+    Position.X = 680.000000000000000000
+    Position.Y = 486.000000000000000000
+    Size.Width = 169.000000000000000000
+    Size.Height = 23.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Width/Height Center Align'
+  end
+  object Text4: TText
+    Position.X = 690.000000000000000000
+    Position.Y = 286.000000000000000000
+    Size.Width = 147.000000000000000000
+    Size.Height = 23.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Width/Height'
+  end
+  object Text5: TText
+    Position.X = 34.000000000000000000
+    Position.Y = 4.000000000000000000
+    Size.Width = 269.000000000000000000
+    Size.Height = 31.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'TAnimationType.'
+  end
+  object Text6: TText
+    Position.X = 352.000000000000000000
+    Position.Y = 6.000000000000000000
+    Size.Width = 269.000000000000000000
+    Size.Height = 31.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'TInterpolationType.'
+  end
+  object Linha: TText
+    Position.X = 676.000000000000000000
+    Position.Y = 26.000000000000000000
+    Size.Width = 555.000000000000000000
+    Size.Height = 133.000000000000000000
+    Size.PlatformDefault = False
+    Text = 
+      'TAnimator.AnimateFloat(Objecto, '#39'Prop'#39', Valor, Tempo, TAnimation' +
+      'Type.x, TInterpolationType.x);'
+    TextSettings.Font.Size = 22.000000000000000000
+  end
+  object Button3: TButton
+    Position.X = 680.000000000000000000
+    Position.Y = 183.000000000000000000
+    Size.Width = 549.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    Text = 'Ocupar UIThread / MainThread'
+    OnClick = Button3Click
+    object ShadowEffect7: TShadowEffect
+      Distance = 3.000000000000000000
+      Direction = 45.000000000000000000
+      Softness = 0.300000011920929000
+      Opacity = 0.600000023841857900
+      ShadowColor = claBlack
+      Enabled = False
+    end
+  end
+end
